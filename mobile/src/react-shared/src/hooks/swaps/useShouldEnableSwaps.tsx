@@ -1,6 +1,6 @@
-import { ZeroXQuote } from "@railgun-community/cookbook";
-import { useMemo } from "react";
-import { useReduxSelector } from "../hooks-redux";
+import { ZeroXV2Quote } from '@railgun-community/cookbook';
+import { useMemo } from 'react';
+import { useReduxSelector } from '../hooks-redux';
 
 export const useShouldEnableSwaps = (
   unavailableOnPlatform: boolean = false
@@ -20,7 +20,7 @@ export const useShouldEnableSwaps = (
 
     const networkName = network.current.name;
 
-    if (!ZeroXQuote.supportsNetwork(networkName)) {
+    if (!ZeroXV2Quote.supportsNetwork(networkName)) {
       return false;
     }
 

@@ -12,7 +12,7 @@ const initialState: ProofBatchProgressState = {
 };
 
 const slice = createSlice({
-  name: "proofBatcher",
+  name: 'proofBatcher',
   initialState,
   reducers: {
     setProofBatchProgress(state, action: PayloadAction<ProofProgressEvent>) {
